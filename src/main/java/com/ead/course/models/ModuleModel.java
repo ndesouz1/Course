@@ -27,4 +27,7 @@ public class ModuleModel implements Serializable {
     @Column(nullable = false)
     private LocalDateTime creationDate;
 
+    @ManyToOne(optional = false)
+    private CourseModel course;
+
 }
