@@ -14,12 +14,15 @@ public interface ModuleService {
 
     ModuleModel save(ModuleModel moduleModel);
 
-    Optional<ModuleModel> findModuleIntoCourse(UUID courseId, UUID moduleId);
 
-    List<ModuleModel> findAllByCourse(UUID courseId);
+
+
+
 
     Optional<ModuleModel> findById(UUID moduleId);
 
-    Page<ModuleModel> findAllByCourse(Specification<ModuleModel> spec, Pageable pageable);
+    Optional<ModuleModel> findModuleIntoCourse(UUID courseId, UUID moduleId);
+
+    List<ModuleModel> findAllByCourse(UUID courseId);
 }
 
